@@ -48,34 +48,34 @@ public class FirstSpringAppApplication {
 
 //		  loose coupling
 //        setter injection
-		Employee emp1 = new Employee();
-		emp1.setId(103);
-		emp1.setName("sunil");
-		emp1.setEmail("sunil@gmail.com");
-		emp1.setDesignation("senior developer");
-
-		Address addrs1 = new Address();
-		addrs1.setDoorno(244);
-		addrs1.setStreetName("nagara");
-		addrs1.setCity("suraram");
-
-		emp1.setAddress(addrs1);
-		System.out.println("Emp is " + emp1);
-		System.out.println("Addrs is " + addrs1);
-
-//		## changing address with emp1 object
-		emp1.getAddress().setStreetName("AAAA");
-		emp1.getAddress().setCity("ccccc");
-
-		System.out.println("Emp after change is " + emp1);
-		System.out.println("Addrs after change is " + addrs1);
-
-//		constructor injection
-		Address addrs2 = new Address(222, "noida", "delhi");
-		Employee emp2 = new Employee(101, "sunil", "sunil@123mail.com", "worker", addrs2);
-
-		System.out.println("Emp2 after change is " + emp2);
-		System.out.println("Addrs2 after change is " + addrs2);
+//		Employee emp1 = new Employee();
+//		emp1.setId(103);
+//		emp1.setName("sunil");
+//		emp1.setEmail("sunil@gmail.com");
+//		emp1.setDesignation("senior developer");
+//
+//		Address addrs1 = new Address();
+//		addrs1.setDoorno(244);
+//		addrs1.setStreetName("nagara");
+//		addrs1.setCity("suraram");
+//
+//		emp1.setAddress(addrs1);
+//		System.out.println("Emp is " + emp1);
+//		System.out.println("Addrs is " + addrs1);
+//
+////		## changing address with emp1 object
+//		emp1.getAddress().setStreetName("AAAA");
+//		emp1.getAddress().setCity("ccccc");
+//
+//		System.out.println("Emp after change is " + emp1);
+//		System.out.println("Addrs after change is " + addrs1);
+//
+////		constructor injection
+//		Address addrs2 = new Address(222, "noida", "delhi");
+//		Employee emp2 = new Employee(101, "sunil", "sunil@123mail.com", "worker", addrs2);
+//
+//		System.out.println("Emp2 after change is " + emp2);
+//		System.out.println("Addrs2 after change is " + addrs2);
 	}
 }
 
